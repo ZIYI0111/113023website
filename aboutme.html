@@ -38,13 +38,56 @@
 }
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css">
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="Container">
   <div id="header"><img src="banner5.jpg" width="1280" height="150"></div>
   <div id="article">
+    <div id="Accordion1" class="Accordion" tabindex="0">
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">基本資料</div>
+        <div class="AccordionPanelContent">
+          <table width="874" height="179" border="0">
+            <tr>
+              <td colspan="2"><center><img src="images/個人.jpg" width="300" height="400"></center> 
+              ></td>
+            </tr>
+            <tr class="titlestyle">
+              <td width="440">個人資料</td>
+              <td width="424">學經歷</td>
+            </tr>
+            <tr>
+              <td><p>姓名:游子毅</p>
+              <p>性別:男</p>
+              <p>E-mail:11213023@gm.hnvs.cy.edu.tw</p>
+              <p>興趣:打籃球</p></td>
+              <td><p>港坪國小</p>
+              <p>玉山國中</p>
+              <p>華南高商</p>
+              <p>幹部:高2學藝股長</p>
+              <p>社團:野外健行社</p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">設計理念</div>
+        <div class="AccordionPanelContent">
+          <p data-start="61" data-end="334">本網頁以「電競商城」為主題，設計理念著重於視覺衝擊與操作直覺性，營造出濃厚的電競氛圍，吸引目標族群目光。首頁採用分區圖片配置，將商城介紹、遊戲資訊、實況主推薦與最新活動等功能區塊嵌入主視覺畫面內，讓使用者只需點擊畫面特定區域，即可快速進入對應頁面，提升網站操作效率。色彩上以電競常見的高對比、動態感十足的視覺風格呈現，搭配清晰的版面結構與簡潔導覽設計，符合現代電競玩家追求快速、直接、刺激的使用體驗。整體設計兼顧行銷宣傳與資訊導覽，透過視覺化操作提升網站吸引力與辨識度，並強化品牌專業形象。</p>
+        </div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab">學習反思</div>
+        <div class="AccordionPanelContent">
+          <p>透過這次電競商城網頁設計的製作，我學習到 HTML 基本語法的應用。過去我對網頁結構與版面安排不太熟悉，透過這次實作，了解到如何利用表格與圖片組合排版，並透過設定座標位置來製作超連結區域，達到簡單又直覺的導覽效果。</p>
+          <p>同時，透過圖片呈現不同主題區塊，讓我體會到視覺設計在網頁中的重要性。雖然目前的網頁仍以靜態圖片為主，未來希望能進一步學習 CSS 排版。</p>
+        </div>
+      </div>
+    </div>
    
   </div>
   <div id="item">
@@ -61,6 +104,7 @@
 </div>
 <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var Accordion1 = new Spry.Widget.Accordion("Accordion1");
 </script>
 </body>
 </html>
